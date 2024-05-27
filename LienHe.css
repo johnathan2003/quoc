@@ -1,0 +1,286 @@
+.bang , tr, th{
+    border: 10px solid #444;
+    border-collapse: collapse;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    th:active{
+        background-color: rgb(49, 201, 82);
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        background-color: rgb(191, 77, 77);
+        color: rgb(66, 27, 158);
+        padding: 10px;
+    }
+}
+tr, th {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+
+
+label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.trang{
+    display : flex ;
+    z-index: 100;
+}
+.nen{
+    background-image: url(anh/background1.png);
+
+}
+.logo{
+    transform: translate(75% , -10%);
+    z-index: 100;
+
+}
+*{
+
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+.thanh{
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    transform: translate(0,-240px);
+    z-index: -1;
+}
+.menu{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Orbitron', sans-serif;
+    transform: translate(0, -20%);
+    z-index: 100;
+    height: 200px;
+}
+  
+ol{
+
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+    
+}
+.menu-item{
+    padding: 1em.5em ;
+
+    background: #444;
+    position: relative;
+    border-bottom: 5px solid #999;
+    margin: 0 .1em;
+    transition: border-bottom .23s ease-in-out, background .23s linear;
+    cursor: pointer;
+    min-width: 8em;
+    text-align: center;
+ 
+    &:hover, &:focus-within{
+    
+        border-bottom-color: #91d36b;
+        background: #333;
+    }
+}
+
+.sub-menu, .sub-menu:hover{
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+}
+          
+.sub-menu{
+
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    margin-top: 1em;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+  .menu-item{
+
+      margin: .1em 0;
+      padding: 1em;
+      width: 10em;
+      text-align: center;
+      z-index: 2;
+  }
+ 
+  
+a{
+
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:focus{
+        outline: none;
+    }
+}
+    
+@media (max-width: 690px){
+
+    .menu{
+
+        width: 95%;
+        font-size: 16px;
+    }
+    .menu-item{
+        
+        margin: .1em;
+        &:nth-child(1){
+
+            order: 0;
+        }
+        &:nth-child(2){
+
+            order: 1
+        }
+        &:nth-child(3){
+
+            order: 3
+        }
+        &:nth-child(4){
+
+            order: 4
+        }
+        &:nth-child(5)
+        {
+
+            order: 2
+        }
+    }
+   
+}
+@media (max-width: 480px){
+    
+    .menu{
+  
+        font-size: 12px;
+    }
+}
+.lichchieu{
+    background-color: #565656;
+    transform: translate(0, -100px);
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    
+    
+}
+.hinh2{
+    
+    width: 1687px;
+    height: 250px;
+}
+.combo{
+    
+    height: 500px;
+    transform: translate(0, -150px);
+}
+.chulichchieu{
+    color: #ffff00;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+p{
+    transform: translate(0 , 10px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tenphimvang1{
+    padding-top: 40px;
+    margin-left: 50px;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.tong{
+    background-color: #444;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    transform: translate(0px,-90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.chu1,.chu2,.chu3{
+    flex: 1;
+    text-align: center;
+    color: white;
+    margin: 10px 20px;
+    padding: 10px 0;
+}
+
+
+
+li {
+    list-style-type: none;
+    border: solid yellow 2px;
+    padding: 5px; 
+    background-color: yellow;   
+}
+
+
+.input-long{
+    width: 200px;
+}
+
+
+
+
+.chu2{
+    
+}
+
+.swiper {
+    width: 1200px;
+    height: 100%;
+    border-bottom: solid yellow;
+}
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
